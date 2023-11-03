@@ -1,0 +1,170 @@
+English oral comp 03/11/23
+=======================
+		AUDIO
+=======================
+Exercice 1:
+
+	1) 	F
+	2)	T
+	3)	F
+	4)	T
+	5)	T
+	6)	F
+	7)	F
+	8)	F
+	9)	F
+	10)	T
+	
+Exercice 2:
+	
+	1)	T
+	2)	F
+	3)	F
+	4)	F
+	5)	T
+	6)	T
+	7)	T
+	8)	T
+	9)	F
+	10)	F
+	
+Exercice 3:
+
+	1) What percentage of people 18 to 29 prefer news from social media platforms? (1 point)
+		A third (33.33%)
+	2) Describe the new White House communication strategy? (1point)
+		Invinting influencers
+	3) Why was the influencer V Spehar invited to the special White House briefing? (1 point)
+		To spread informations from gov
+	4) How have traditional media outlets reacted to tiktokers at the White House. (1 point)
+		Generaly positive + fear of ties attached
+	5) In what way is A B Burns different from the typical social media influencer. (1 point)
+		Don't know, don't care (sorry, don't mean to be an arse, but i honestly don't give a crap about either of those subjects)
+	6) According Tovi Troy, social media offers advantages to politicians. Name two.? (2 points)
+		cheap & specific targets
+	7) What are two potential pitfalls of influencers communicating political messages? (2 points)
+		Not professionnals & politicals people
+	8) Will the White House abandon working with social media influencers? (1 point)
+		No
+		
+Exercice 4:
+
+	1) How do people convey information using the human voice? (2 points)
+		Speech & modularity (text and emotionnal subtext yada yada)
+	2) Where is the Health Voice Center located? (1) . (1 point)
+		South florida uni
+	3) Name at least two of the five main conditions diagnosed with voice analysis. (2 points)
+		vocal cords cancer & parkinson
+	4) Which two aspects of the human voice indicate potential Parkinson’s disease? (1 point; 0.5
+	each)
+		low speech and lower frequency
+	5) To complete the app, what two elements need to be developed? (2 points)
+		more data, better algorithm
+	6) Why does the database need large numbers of voice recordings? (1 point)
+		Because thirty 70yo males isn't great as a training set
+	7) What is the role of the Bioethicists in the app development process?(1 point)
+		To avoir privacy issues
+		
+=======================
+		READING
+=======================
+
+Exercice 1:
+
+	1)	False
+	2)	True
+	3)	False
+	4)	False
+	5)	False
+	6)	True
+	7)	False
+	8)	True
+	
+Exercice 2:
+
+	1)	rollout - b) a public unveiling
+	2)	kink - c) flaw or imperfection
+	3)	fledgling - c) emerging
+	4)	bolster - a) give a boost to
+	5)	devilish - c) fiendish
+	6)	kerb - a) sidewalk edge
+	7)	imbibe - b) assimilate
+	8)	replicate - a) to repeat
+	
+Exercice 3:
+
+
+	1) Name the two countries leading the development of computer piloted car technology.
+
+		The two countries leading the development of computer-piloted car technology are the 
+		United States (with companies like Tesla and Waymo) and China (with companies like Baidu).
+
+	2) This article uses the expression “buy the narrative.” What do you think this expression
+		means and explain why the author uses it? Use your own words. 
+		
+		The expression "buy the narrative" means to accept or believe a particular story or viewpoint. 
+		In this context, the author is suggesting that people should not unquestionably accept the idea 
+		that developing self-driving cars should be treated as a race. The author uses this expression to 
+		convey the idea that it's important to critically examine and not blindly accept the prevailing viewpoint 
+		on this matter.	
+
+	3) Give two reasons to justify why self-driving car technology is described as a “race.” (2
+	points)
+
+		a) Companies want to be perceived as leaders in the field to gain support from employees, 
+			investors, regulators, and the public.
+		b) The idea of a race can be used to push for faster rule-making and regulations, 
+			potentially exposing people to unnecessary risks.
+
+	4) What does Cade Metz suggest as an alternative? (1 point)
+
+		Cade Metz suggests an alternative approach: Instead of trying to win at making driverless cars 
+		widespread, there could be a race to steer this technology in the public interest.
+
+	5) What problem is “crowded out” because of focusing on driverless cars? (1 point)
+
+		Focusing on driverless cars may "crowd out" alternative ideas for improving transportation. 
+		This means that the intense focus on self-driving cars can divert attention and resources away 
+		from other potential solutions to transportation problems.
+
+
+Exercice 4:
+	
+	The question of whether the public should be informed when automated vehicles are on the roads is a complex issue. 
+	While transparency and safety are essential, it is crucial to recognize that not all potentially risky drivers
+	or conditions are subject to public disclosure. This essay will argue that singling out automated vehicles for
+	public awareness may not be justified when other dangerous driving behaviors and conditions go unnoticed
+	by the public and authorities.
+
+	If we advocate for public awareness of automated vehicles, we must also consider other potential risks on the
+	road. People who are intoxicated or under the influence of substances that impair their driving abilities pose
+	a significant danger to themselves and others on the road. Yet, their presence is not publicly disclosed,
+	and we rely on law enforcement to address these issues. Similarly, individuals with poor eyesight who do
+	not wear glasses or contact lenses can pose a safety risk, yet their condition is not made public.
+	Therefore, singling out automated vehicles for disclosure creates an inconsistency in road safety measures.
+
+	Mandating public disclosure of automated vehicles may lead to discriminatory treatment.
+	The public may develop unwarranted fear or hostility towards these vehicles, assuming they are inherently
+	unsafe. This bias can hinder the progress of self-driving technology, causing unwarranted obstacles for
+	companies seeking to improve transportation safety.
+
+	Public awareness of automated vehicles' presence may also raise concerns about privacy.
+	Just as we do not disclose the identity of drivers who are drunk or have poor eyesight,
+	revealing the presence of self-driving cars may infringe on individuals' privacy rights.
+	As technology advances, vehicles may carry sensitive information and passengers who value
+	their privacy. Requiring the public disclosure of these vehicles may deter individuals from
+	using them, limiting the adoption of safer transportation alternatives.
+
+	The rush to publicly disclose automated vehicles may hinder technological progress.
+	As highlighted in the article "How Self-Driving Cars Got Stuck in the Slow Lane,"
+	the development of self-driving technology is complex and evolving.
+	Pushing for immediate disclosure may discourage companies from fine-tuning
+	their systems and addressing the challenges related to edge cases, which could delay
+	the widespread adoption of safer self-driving technology.
+
+	While safety and transparency are essential, it is crucial to adopt a balanced approach.
+	Mandating public awareness of automated vehicles while overlooking other potential risks
+	on the road is inconsistent and may lead to discriminatory treatment. It may also raise
+	privacy concerns and hinder technological progress. As we consider transparency in road safety,
+	we should do so in a manner that addresses all potential risks equally, ensuring a fair and balanced
+	approach to transportation safety.
