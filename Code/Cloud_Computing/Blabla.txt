@@ -1,0 +1,10 @@
+GIGAOM, OVUM, GARTNER, ISG, FORRESTER, IDC, 451 RESEARCH, GlobalData, CurrentAnalysis
+
+GPU as a service
+
+1) Explain the concept of the solution
+2) What are the pros & cons (for the client)
+3) Is maket mature ? (Gartner or else)
+4) Identify the actors and their relative position (magic quadrant), who are the leaders?
+5) Choose one solution vendor and explain why this one
+6) Financial impacts ? Cost vs savings 
