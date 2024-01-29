@@ -1,0 +1,85 @@
+farhad.irandoust@gmail.com
+
+J1:
+	WAN == Wide Area Network
+	MAN == Metropolitan Area Network (pas même site mais dans le même coin)
+	DNA == Digital Network Architecture (réseau intelligent)
+	IPS == Intrusion Protection System (Travail avec les firewalls)
+	STP == Spanning Tree Protocol (Check si y'a pas de loop dans ton réseau)
+	OSI == Open System Interconnection
+	
+	Soke-hub == Star topology
+	Full-mesh == Connected-between topology
+	MPLS == hub avec routing (très cher, Multiprotocol Label Switching)
+	
+	store and forward => check errors before sending them
+	
+	Packet-tracers & GNS3 == Network sandbox
+	
+J2:
+	full-duplex == cable dans les 2 sens en simultané
+	PoE == Power Over Ethernet (Data & Electricité)
+	UTP == Unshielded Twisted-Pair (Cables cuivre torsadés 10mb/40gb | 100m-30m)
+	SFP == Small form-factor pluggable (qsfp == quad)
+	trame ethernet taille max = 1518, min = 64
+	FCS == Frame check sequence (validation data)
+	
+	Popuation MacAddressTable:
+		arrivée frame sur switch
+		switch lis frame source
+		switch enregistre source & port d'origine frame
+		switch lis champ destination
+		recherche port destination
+			si trouve, forwarding
+			si pas trouvé, "flooding"* + écoute réponse
+				destinataire envois frame réponse
+				switch enregistre frame source & port
+			
+	*flooding != broadcast (même effet, mais broadcast intentionnel, flooding pour mapper les ports)
+		Pour le receiver, broadcast == pour moi auto, flooding a un destinataire précis, parfois pas moi
+		
+	172.16.214.33/19
+	255.255.224.0
+	172.16.192.1 (low)
+	172.16.223.254 (high)
+	172.16.223.255 (broadcast)
+	
+	Seems like you take under (?)
+	
+	TTL packet header field == Time To Live, décrémente de 1 à chaque bond, delete packet à 0
+	
+	IPV4 classes:
+		1-127	classe A / 8  (first bit 0)
+		128-191	classe B / 16 (first bits 10)
+		192-223	classe C / 24 (first bits 11)
+		224-239	classe D / 24 (first bits 111)
+		
+	Server DHCP == Dynamic Host Configuration Protocol => Attribut les ip sur un réseau
+	
+	
+J3:
+	show eigrp neighbors (another show neighbors)
+	trace route => protocoles udp
+	
+	troubleshoot commands:
+		ping
+		traceroute
+		telnet/ssh
+		show ip arp/show ip interface brief
+		
+	Stub-Network == Lan with only 1 access point to go outside (Stuck)
+	
+J4:
+	OSPF == Open shortest path first
+	ABR == Area Border Router (Jonction entre 2 routing domain/area -- Même routing protocole)
+	ASBR == Autonomous System Boudary Router (Jonction mais avec un autre systeme de routage/internet)
+	"show etherchannel summary" => See portchannels
+	ACL == Access list (authorise ou deny certaines ip/ranges d'ip)
+	
+J5:
+
+	NAT == Network Address Translation (Router qui change ip interne en ip externe)
+	PAT == Port Address Translation (Router fait les requetes en son nom)
+	### ASK CHATGPT FOR DIFFERENCE ###
+	
+	SD == Software Define (Principe de controlleur de flux global // Genre google maps pour router)
