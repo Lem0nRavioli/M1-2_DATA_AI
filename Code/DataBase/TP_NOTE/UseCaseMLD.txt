@@ -1,0 +1,30 @@
+CASE: 
+- L’établissement est composé de plusieurs chambres.
+	Table "room":
+		Définis "type" & "capacity"
+		Est associée à 0,n "booking"
+
+CASE:
+- Lorsqu’un client effectue une réservation, il doit indiquer les invités qui logeront dans la chambre (lui y compris
+généralement). Ils constitueront un groupe. Pour chaque groupe sera indiqué le porte-parole du groupe (la personne
+avec qui communiquer, généralement un invité du groupe, mais cela peut être un autre invité)
+
+	Table "group":
+		Peux contenir multiples "client"
+		Doit contenir au moins 1 "client" port-parole ("contact_client_id")
+		Table entité association "group_has_client" pour chaque "client" appartenant au "group"
+	Table "booking":
+		Contient le "client" qui effectue la réservation
+		Contient le group associé à la réservation
+		
+CASE:	
+- La pension choisie par le client (sans repas, petit-déjeuner, demi-pension, tout inclus) – On souhaite pouvoir
+ajouter d’autres types de pensions ultérieurement
+- Lors de son séjour un groupe peut être amené à acheter des prestations complémentaires (excursions, repas,
+activités sportives, …).
+
+	Table "option", "booking" & entité association "booking_has_option"
+		Le "client" (booking.client_id) choisi sa pension ("option") à la réservation
+		Durant le séjour, le "group" (booking.group_id) peux ajouter diverses "option"s (activités/prestations/pension/etc).
+			Ces options ont une "date" et peuvent faire l'object d'un "coupon" de reduction (0-100)%
+		
