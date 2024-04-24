@@ -13,10 +13,10 @@ def degage_minus(age:int) -> str:
 import random
 def weird_rules():
     num = random.randint(0,30)
-    if num > 20:
-        return "Warm"
     if num < 11:
         return "Cool"
+    if num > 20:
+        return "Warm"
     return "Tepid"
 
 
