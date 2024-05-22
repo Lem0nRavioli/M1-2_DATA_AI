@@ -20,25 +20,39 @@ def detectMyAgeByNight(age:int) -> str:
 
 
 # Ex4
-table = [[1,2,3.33,12,5,6],[3,2,1,4],[6.7,4,2,5], [4,5,3.56,22, 5], []]
+table = [[1,2,3.33,12,5,6],[3,2,1,4],[6.76222,4,2,5], [4,5,3.56,22, 5], [3]]
+def biggest_length_number(num_list):
+    return max(num_list, key=lambda x: len(str(x)))
+
+# print(biggest_length_number(table[0]))
+
 def tableGenerator(table):
+    # value to equalize table
     num_col = len(max(table, key=len))
-    print(f"| {' '*5} | {''.join(['Test' + str(i) + ' | ' for i in range(num_col)])}")
-    print(f"| {'-'*5} | {''.join(['-----' + ' | ' for _ in range(num_col)])}")
+    max_char = len(str(max(max(table, key=biggest_length_number))))
+    if max_char < 5: max_char = 5
+    
+    # generate column names
+    print(f"| {' '*5} | {''.join(['Test' + str(i) + " "*(max_char - 5) + ' | ' for i in range(num_col)])}")
+    print(f"| {'-'*5} | {''.join(["-"*(max_char) + ' | ' for _ in range(num_col)])}")
+
+    # generate row names & data
     for i, line in enumerate(table):
+        # equalize rows with "N/A"
         while len(line) < num_col:
             line.append("N/A")
         print(f"| {'Data' + str(i + 1)} | ", end='')
         for element in line:
-            print(f"{str(element) + " "*(5 - len(str(element)))} | ", end='')
+            print(f"{str(element) + " "*(max_char - len(str(element)))} | ", end='')
         print()
 
 tableGenerator(table)
 
 # Ex5
-import datetime, time
+import phonenumbers.geocoder
+import datetime, time, psutil
 def display_clock():
-    while True:
+    while psutil.sensors_battery().power_plugged == True:
         print(datetime.datetime.now().strftime("%H:%M:%S"))
         time.sleep(1)
 # display_clock()
@@ -49,21 +63,27 @@ def is_palindrome(check):
     first_half = check[:half_len]
     second_half = check[-half_len:]
     for i, element in enumerate(first_half):
-        if element != second_half[-i]:
+        if element != second_half[-i-1]:
             return False
     return True
+    # return check == check[::-1]
+
+print(f"bob is a palindrom: {is_palindrome("bob")}")
+print(f"pasbob is a palindrom: {is_palindrome("pasbob")}")
 
 # Ex7
 import phonenumbers
 def validMyInternationalPhone(num, indicatif_pays):
-    country_dict = {
-        "+33": "fr",
-        "+1": "us"
-    }
-    phone_number_object = phonenumbers.parse(indicatif_pays + num, indicatif_pays)
-    return phonenumbers.is_valid_number(phone_number_object)
+    try:
+        phone_number_object = phonenumbers.parse(indicatif_pays + num)
+        country = phonenumbers.geocoder.country_name_for_number(phone_number_object, 'en')
+        if country in ["France", "United States"]:
+            return True
+        return False
+    except:
+        return False
 
-# print(validMyInternationalPhone("0649387994", "+1"))
+# print(validMyInternationalPhone("0649387994", "+33"))
 
 # Ex8
 def fibonacci_recur(result, lim):
@@ -88,6 +108,6 @@ def chrono(func):
 @chrono
 def test_chrono():
     time.sleep(1)
-    print("helo")
+    print("hello")
 
 test_chrono()
