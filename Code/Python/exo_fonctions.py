@@ -20,11 +20,14 @@ def detectMyAgeByNight(age:int) -> str:
 
 
 # Ex4
-table = [[1,2,3.33],[3,2,1],[6.7, 4, 2]]
+table = [[1,2,3.33,12,5,6],[3,2,1,4],[6.7,4,2,5], [4,5,3.56,22, 5], []]
 def tableGenerator(table):
-    print(f"| {' '*5} | {''.join(['Test' + str(i) + ' | ' for i in range(len(table))])}")
-    print(f"| {'-'*5} | {''.join(['-----' + ' | ' for _ in range(len(table))])}")
+    num_col = len(max(table, key=len))
+    print(f"| {' '*5} | {''.join(['Test' + str(i) + ' | ' for i in range(num_col)])}")
+    print(f"| {'-'*5} | {''.join(['-----' + ' | ' for _ in range(num_col)])}")
     for i, line in enumerate(table):
+        while len(line) < num_col:
+            line.append("N/A")
         print(f"| {'Data' + str(i + 1)} | ", end='')
         for element in line:
             print(f"{str(element) + " "*(5 - len(str(element)))} | ", end='')
@@ -75,16 +78,16 @@ def fibonacci_recur(result, lim):
 # print(fibonacci_recur([], 12))
 
 # Ex9
-def chrono_deco(func):
+def chrono(func):
     def wrapper():
         start_time = datetime.datetime.now()
         func()
         print(f"time elapsed: {datetime.datetime.now() - start_time}")
     return wrapper
 
-@chrono_deco
-def test_chrono_deco():
+@chrono
+def test_chrono():
     time.sleep(1)
     print("helo")
 
-test_chrono_deco()
+test_chrono()
