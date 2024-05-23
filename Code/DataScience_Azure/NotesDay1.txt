@@ -1,0 +1,11 @@
+1: compute cluster/compute instance
+2: ml automatisé
+4: executer et deployer
+5: pipeline
+10: python sdk, notebooks, azure ml studio
+11 : pipeline auto ml
+12: pipeline inférence designer
+
+
+## FIND RESSOURCES (pay) ##
+HOME > Subscriptions > Subscriptions > Azure for Students > Resources
