@@ -5,5 +5,5 @@ val textFile = sc.textFile("hdfs:///user/root/input/fichier1.txt")
 val counts = textFile.flatMap(line => line.split("\\s+")).map(word => (word, 1)).reduceByKey(_ + _)
 
 // Save the result back to HDFS or print it
-counts.saveAsTextFile("hdfs:///user/root/output/wordcount") // To save the result to HDFS
+counts.saveAsTextFile("hdfs:///user/root/output/wordcount_purchase2") // To save the result to HDFS
 counts.collect().foreach(println) // To print the result to the console
